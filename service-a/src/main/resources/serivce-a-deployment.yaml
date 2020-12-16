@@ -18,7 +18,7 @@ spec:
       containers:
         - name: service-a
           image: abdullah1122/cloud_deployment:service-a-0.0.1-SNAPSHOT
-          imagePullPolicy: always
+          imagePullPolicy: IfNotPresent
           ports:
             - name: http
               containerPort: 8080 # The port that the container exposes
