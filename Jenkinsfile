@@ -18,7 +18,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git url:'https://github.com/gazi-opu/CloudDeployment.git', branch:'master'
+        git url:'https://github.com/gazi-opu/CloudDeployment.git', branch:'main'
       }
     }
     /*
