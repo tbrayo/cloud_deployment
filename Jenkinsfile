@@ -21,7 +21,7 @@ pipeline {
         git url:'https://github.com/gazi-opu/CloudDeployment.git', branch:'main'
       }
     }
-    /*
+   
       stage("Build image") {
             steps {
                 script {
@@ -29,7 +29,7 @@ pipeline {
                 }
             }
         }
-    
+    /*
       stage("Push image") {
             steps {
                 script {
@@ -41,7 +41,7 @@ pipeline {
             }
         }
 
-    */
+    
     /*stage('Deploy App') {
       steps {
         script {
