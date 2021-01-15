@@ -18,14 +18,14 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git url:'https://github.com/gazi-opu/CloudDeployment.git', branch:'main'
+        git url:'https://github.com/gazi-opu/cloud_deployment.git', branch:'main'
       }
     }
    
       stage("Build image") {
             steps {
                 script {
-                  myapp = docker.build("gazi-opu/CloudDeployment/service-a:service-a-0.0.1-SNAPSHOT")
+                  myapp = docker.build("gazi-opu/cloud_deployment/service-a:service-a-0.0.1-SNAPSHOT")
                 }
             }
         }
