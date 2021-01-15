@@ -25,7 +25,7 @@ pipeline {
       stage("Build image") {
             steps {
                 script {
-                  myapp = docker.build("https://github.com/gazi-opu/cloud_deployment.git#main:service-a")
+                  myapp = docker.build("service-a abdullah1122/cloud_deployment:service-a-0.0.1-SNAPSHOT")
                 }
             }
         }
