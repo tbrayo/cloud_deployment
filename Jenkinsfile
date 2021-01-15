@@ -25,7 +25,7 @@ pipeline {
       stage("Build image") {
             steps {
                 script {
-                  myapp = docker.build("gazi-opu/cloud_deployment/service-a:service-a-0.0.1-SNAPSHOT")
+                  myapp = docker.build("gazi-opu/cloud_deployment/service-a:service-a")
                 }
             }
         }
