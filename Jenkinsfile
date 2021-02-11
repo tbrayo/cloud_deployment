@@ -9,8 +9,8 @@ pipeline {
       stage("Build image") {
             steps {
                 script {
-                  service_a = docker.build("abdullah1122/cloud_deployment:service-a-0.0.1-SNAPSHOT cloud_deployment/service-a/")
-                  simulator_service = docker.build("abdullah1122/cloud_deployment:service-a-0.0.1-SNAPSHOT cloud_deployment/service-a/")
+                  service_a = docker.build("abdullah1122/cloud_deployment:service-a-0.0.1-SNAPSHOT cloud_deployment/service-a/ .")
+                  simulator_service = docker.build("abdullah1122/cloud_deployment:simulator-service-0.0.1-SNAPSHOT cloud_deployment/simulator-service/ .")
                 }
             }
         }
