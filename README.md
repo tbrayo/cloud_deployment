@@ -9,3 +9,12 @@ Specific Objective are:
 2. To design and deploy a Microservice Architecture using Dockers and Kubernetes.
 3. Integrating CI/CD Pipeline with Docker and kubernetes.
 4. Test and validate the deployment.
+
+Technologies Used:
+1. Spring Boot
+2. REST Service
+3. MySQL 
+4. Kubernetes
+5. Jenkins
+6. Docker
+
